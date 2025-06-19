@@ -133,7 +133,7 @@ body {
     margin: 32px 0;
 }
 
-.about_button {
+.secondary_button {
     display: flex;
     align-items: center;
     padding: 0 32px;
@@ -360,4 +360,59 @@ body {
     font-size: 28px;
     font-weight: 200;
     margin-left: 40px;
+}
+
+{/* bottom banner */}
+.bottom_banner_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bottom_banner_title_wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    padding: 0 32px;
+    border: 1px solid #44444480;
+    border-radius: 24px;
+    width: fit-content;
+
+    span {
+        margin-left: 12px;
+        font-size: 16px;
+        font-weight: 200;
+        color: #AAAAAA;
+    }
+}
+.bottom_banner_content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 132px;
+    text-align: center;
+    height: 100%;
+}
+.bottom_banner_content_text_wrapper {
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.bottom_banner_content_title {
+    font-size: 56px;
+    font-weight: 500;
+    color: #EEF3EE;
+}
+.bottom_banner_content_description {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1A1A1A;
+}
+.bottom_banner_content_button_wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 52px;
 }
