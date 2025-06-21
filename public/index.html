@@ -11,6 +11,7 @@
     <header class="header">
         <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
         <div class="header_menu_wrapper">
+            <img src="./assets/icons/header_menu.svg" alt="menu"/>
             <div class="header_link_wrapper">
                 <a href="index.html">Home</a>
                 <a>Services</a>
@@ -20,23 +21,38 @@
             <button class="book_call_button">Book a free call</button>
         </div>
     </header>
+
     <div class="banner_wrapper">
         <div class="page_title_container">
             <div class="dot"></div>
             <label class="page_title">Home</label>
         </div>
+<!--        pc-->
         <img src="./assets/home_banner.svg" alt="banner" class="banner" />
+<!--        mobile-->
+        <img src="./assets/mobile_home_banner.svg" alt="banner" class="mobile_banner"/>
         <div class="banner_content">
             <div class="banner_text_wrapper">
                 <span class="banner_title">Your remote tech team
                     <span class="green_text">— ready to build!</span>
                 </span>
+                <div class="banner_mobile_title">
+                    <span>Your</span>
+                    <span>remote tech</span>
+                    <span>team</span>
+                    <span class="green_text">- ready to build!</span>
+                </div>
                 <span class="banner_description">
                     Focus on your vision — we’ll handle the code, systems, and scaling
                 </span>
             </div>
             <div class="banner_button_wrapper">
-                <button class="banner_button_primary"><span>Let’s get started</span><img src="./assets/icons/arrow_up_right.svg" alt="arrow_up_right"/></button>
+                <button class="banner_button_primary">
+                    <span>Let’s get started</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
                 <div class="layer_to_gradient">
                     <button class="secondary_button">
                         <label class="banner_button_label">See All Services</label>
@@ -57,10 +73,12 @@
             bring your ideas to life, fast and without the fluff.
         </span>
             <div class="about_button_container">
-                <div class="layer_to_gradient">
-                    <button class="secondary_button">
+                <div class="layer_to_gradient_second">
+                    <button class="secondary_button_second">
                         <label class="about_button_label">More about us</label>
-                        <img class="about_button_icon" src="./assets/icons/arrow_up_right.svg" alt="arrow right up"/>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -75,6 +93,14 @@
                                 From proof-of-concepts to mission-critical platforms, our codebase and processes flex
                                 to fit your needs—no surprises, just results.
                             </span>
+                        </div>
+
+                    </div>
+                    <div class="mobile_services">
+                        <div class="right_column_item">
+                        <span class="right_column_item_title">
+                            Services
+                        </span>
                         </div>
                     </div>
                     <div class="second_row">
@@ -95,7 +121,9 @@
                             <div class="second_row_second_item_button_wrapper">
                                 <button class="second_row_second_item_button">
                                     <label>Contact us</label>
-                                    <img src="./assets/icons/arrow_up_right.svg" alt="arrow_up"/>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </button>
                             </div>
 
@@ -120,19 +148,27 @@
                 Everything you might want to know — in one place.
             </span>
             <div class="faq_question">
-                <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                <div>
+                    <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                </div>
                 <span class="faq_questing_title">Do you work with early-stage startups?</span>
             </div>
             <div class="faq_question">
-                <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                <div>
+                    <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                </div>
                 <span class="faq_questing_title">Do you work with early-stage startups?</span>
             </div>
             <div class="faq_question">
-                <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                <div>
+                    <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                </div>
                 <span class="faq_questing_title">Do you work with early-stage startups?</span>
             </div>
             <div class="faq_question">
-                <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                <div>
+                    <button class="faq_expand_button"><img src="./assets/icons/plus.svg " alt="plus"/></button>
+                </div>
                 <span class="faq_questing_title">Do you work with early-stage startups?</span>
             </div>
         </div>
@@ -150,14 +186,19 @@
                 <div class="bottom_banner_content_button_wrapper">
                     <div class="layer_to_gradient">
                         <button class="secondary_button">
-                            <label class="about_button_label">More about us</label>
-                            <img class="about_button_icon" src="./assets/icons/arrow_up_right.svg" alt="arrow right up"/>
+                            <label class="about_button_label">Contact us</label>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
 
             </div>
+<!--            pc-->
             <img src="./assets/bottom_banner.svg" class="bottom_banner" alt="bottom_banner"/>
+<!--            mobile-->
+            <img src="./assets/mobile_bottom_banner.svg" class="mobile_bottom_banner" alt="bottom_banner"/>
         </div>
 
         <footer class="footer">
@@ -165,13 +206,16 @@
                 <div class="footer_button_up_wrapper">
                     <button class="footer_button_up">
                         <span>Send me back up!</span>
-                        <img src="./assets/icons/arrow_up.svg" alt="arrow_top"/>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9998 22.6668V9.3335M15.9998 9.3335L10.6665 14.6668M15.9998 9.3335L21.3332 14.6668" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
                     </button>
                 </div>
 
                <div class="footer_content">
                    <div class="footer_top_content">
-                       <div class="right_left_content">
+                       <div class="footer_left_content">
                            <div class="footer_logo_wrapper">
                                <img src="assets/icons/logo.svg" alt="logo"/>
                                <span>Elevate Experts</span>
