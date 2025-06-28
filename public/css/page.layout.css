@@ -358,6 +358,9 @@ body {
 .green_text {
     color: #B1FFBC;
 }
+.white_text {
+    color: #FFFFFF;
+}
 .banner_description {
     color: #AAAAAA;
     font-weight: 300;
