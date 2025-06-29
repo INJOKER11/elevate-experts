@@ -48,9 +48,9 @@
             </div>
             <div class="form_long_text_outline">
                 <div class="form_label_for_long_text">
-                    <label for="long_text">Long Text*</label>
+                    <label for="long_text">Message*</label>
                 </div>
-                <textarea placeholder="Long Text" id="long_text"></textarea>
+                <textarea placeholder="Your message" id="long_text"></textarea>
             </div>
             <div class="services_wrapper">
                 <span class="services_title">Choose your service</span>
@@ -141,12 +141,15 @@
                     </label>
                 </div>
             </div>
-            <button class="banner_button_primary">
-                <span>Send message</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+            <div class="contact_banner_button_wrapper">
+                <button class="banner_button_primary">
+                    <span>Send message</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
         </form>
         <div class="banner_contacts_wrapper">
             <div class="banner_img">
@@ -175,8 +178,63 @@
             </div>
         </div>
     </div>
-    <img src="./assets/contact/form_background.svg" alt="contact_banner"/>
+<!--    pc-->
+    <img src="./assets/contact/form_background.svg" alt="contact_banner" class="contact_banner_pc"/>
+    <!--    mobile-->
+    <img src="./assets/contact/background_mobile.svg" alt="contact_banner" class="contact_banner_mobile"/>
+<!--tablet-->
+    <img src="./assets/contact/background_tablet.svg" alt="contact_banner" class="contact_banner_tablet"/>
 </div>
+
+<div class="mobile_contact_wrapper">
+<!--    mobile-->
+    <div class="mobile_contact_img">
+        <img src="./assets/contact/img_on_banner_mobile.svg" alt="banner_img"/>
+    </div>
+<!--    tablet-->
+    <div class="tablet_contact_img">
+        <img src="./assets/contact/tablet_middle_banner.svg" alt="banner_img"/>
+    </div>
+    <div class="mobile_contact_details">
+        <span class="mobile_contact_details_text">Contact details</span>
+        <div class="contact_details_wrapper">
+            <div class="email_wrapper">
+                <img src="./assets/icons/email.svg" alt="email" />
+                elevatexperts@gmail.com
+            </div>
+            <div class="mobile_social_wrapper">
+                <div class="mobile_social_button">
+                    <img src="./assets/icons/telegram.svg" alt="telegram"/>
+                </div>
+                <div class="mobile_social_button">
+                    <img src="./assets/icons/linkedin.svg" alt="linkedin"/>
+                </div>
+            </div>
+        </div>
+        <div class="tablet_middle_banner">
+            <div class="tablet_middle_banner_content">
+                <div class="tablet_middle_banner_text_wrapper">
+                    <span class="tablet_middle_banner_title">Don’t feel like waiting?</span>
+                    <span class="tablet_middle_banner_description">Skip the queue — schedule a call with our team right away.</span>
+                </div>
+                <div class="middle_banner_button_wrapper">
+                    <button class="banner_button_primary">
+                        <span>Book a call</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+            <!--    pc-->
+            <img src="./assets/contact/background_middle_banner.svg" class="middle_banner_img" alt="middle_banner"/>
+            <!--mobile-->
+            <img src="./assets/contact/mobile_background_middle_banner.svg" class="mobile_middle_banner_img" alt="middle_banner"/>
+        </div>
+    </div>
+</div>
+
 
 <div class="middle_banner">
     <div class="middle_banner_content">
@@ -194,7 +252,10 @@
         </div>
 
     </div>
+<!--    pc-->
     <img src="./assets/contact/background_middle_banner.svg" class="middle_banner_img" alt="middle_banner"/>
+<!--mobile-->
+    <img src="./assets/contact/mobile_background_middle_banner.svg" class="mobile_middle_banner_img" alt="middle_banner"/>
 </div>
 
 <div class="faq_wrapper">

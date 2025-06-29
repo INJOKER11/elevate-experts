@@ -193,6 +193,7 @@ body {
     border-radius: 16px;
     height: 48px;
     font-size: 12px;
+    width: 100%;
     svg {
         width: 16px;
         height: 16px;
@@ -203,6 +204,7 @@ body {
         height: 52px;
         padding: 0 24px;
         font-size: 16px;
+        width: unset;
         svg {
             width: 20px;
             height: 20px;
