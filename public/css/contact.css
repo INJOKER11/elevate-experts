@@ -513,6 +513,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
     flex-direction: column;
     height: 100%;
     @media (min-width: 1440px) {
+        width: 100%;
         padding: 40px;
         flex-direction: row;
         justify-content: space-between;
