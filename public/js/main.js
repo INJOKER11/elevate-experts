@@ -1,7 +1,9 @@
-import {burger_menu} from "./burger_menu.js";
+import {burgerMenu} from "./burgerMenu.js";
 import {questions} from "./questions.js";
+import {successModal} from "./successModal.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    burger_menu();
+    burgerMenu();
     questions();
+    successModal();
 })

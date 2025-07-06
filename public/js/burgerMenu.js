@@ -1,6 +1,6 @@
 
 
-export function burger_menu() {
+export function burgerMenu() {
     const openButton = document.querySelector(".header_burger_menu_open_button");
     const closeButton = document.querySelector(".header_burger_menu_close_button");
     const overlay = document.querySelector(".mobile_header_menu_overlay");
