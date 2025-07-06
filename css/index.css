@@ -379,6 +379,7 @@
 {/* FAQ */}
 
 .faq_wrapper {
+    width: 100%;
     margin: 120px 0;
     display: flex;
     flex-direction: column;
@@ -386,6 +387,9 @@
     @media (min-width: 768px) {
         margin: 160px 0;
     }
+}
+.faq_questions_wrapper {
+    width: 100%;
 }
 .faq_title {
     display: flex;
@@ -448,10 +452,11 @@
     border: 1px solid #44444480;
     border-radius: 24px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 16px;
     padding: 20px;
-    :last-of-type {
+    &:last-of-type {
         margin-bottom: 0;
     }
     @media (min-width: 768px) {
@@ -460,11 +465,61 @@
     @media (min-width: 1440px) {
         padding: 28px 40px;
         margin-bottom: 24px;
-        :last-of-type {
+        &:last-of-type {
             margin-bottom: 0;
         }
     }
+}
+.faq_question.faq_open {
+    background: #2C2C2C80;
+}
+.faq_question_button_question_wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @media (min-width: 768px) {
 
+    }
+    @media (min-width: 1440px) {
+        gap: 40px;
+    }
+}
+.faq_question_answer {
+    font-size: 14px;
+    font-weight: 100;
+    color: #AAAAAA;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding-top: 0;
+    transition: max-height 0.3s ease,
+    padding 0.3s ease-in-out, opacity 0.3s ease;
+    margin-left: 52px;
+    @media (min-width: 768px) {
+        font-size: 16px;
+        margin-left: 64px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 20px;
+        margin-left: 104px;
+    }
+}
+.faq_open .faq_question_answer {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 20px;
+}
+.faq_button_minus {
+    display: none;
+}
+.faq_open .faq_button_minus {
+    display: inline;
+}
+.faq_button_plus {
+    display: inline;
+}
+.faq_open .faq_button_plus {
+    display: none;
 }
 
 .faq_expand_button {
@@ -475,6 +530,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 40px;
+    flex-shrink: 0;
     img {
         width: 20px;
         height: 20px;
@@ -499,7 +555,6 @@
 .faq_questing_title {
     color: #FFFFFF;
     font-weight: 200;
-    margin-left: 20px;
     font-size: 16px;
     width: fit-content;
     text-wrap: wrap;
@@ -508,7 +563,6 @@
     }
     @media (min-width: 1440px) {
         font-size: 28px;
-        margin-left: 40px;
     }
 }
 
