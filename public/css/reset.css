@@ -60,12 +60,17 @@
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     line-height: 1.5;
     font-family: 'e-Ukraine', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+body.no-scroll {
+    overflow: hidden;
 }
 
 
