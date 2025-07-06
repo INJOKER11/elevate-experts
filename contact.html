@@ -10,10 +10,16 @@
     <title>Home</title>
 </head>
 <body>
+<div class="mobile_header_menu_overlay"></div>
 <header class="header" id="header">
     <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
     <div class="header_menu_wrapper">
-        <img src="./assets/icons/header_menu.svg" alt="menu"/>
+        <button class="header_burger_menu_open_button">
+            <img src="assets/icons/header_menu.svg" alt="menu"/>
+        </button>
+        <button class="header_burger_menu_close_button">
+            <img src="assets/icons/close.svg" alt="menu"/>
+        </button>
         <div class="header_link_wrapper">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -22,7 +28,14 @@
         </div>
         <button class="book_call_button">Book a free call</button>
     </div>
+    <div class="mobile_header_menu">
+        <a href="./index.html">Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </div>
 </header>
+
 
 <div class="contact_banner">
     <div class="contact_banner_title_wrapper">
@@ -377,5 +390,7 @@
     </div>
 </footer>
 
+
+<script src="./js/main.js" type="module"></script>
 </body>
 </html>
