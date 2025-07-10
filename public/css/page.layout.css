@@ -126,7 +126,6 @@ body {
     @media(min-width: 1440px) {
         display: flex;
         width: 502px;
-        margin-left: 235px;
         justify-content: space-between;
         color: #FFFFFF;
         font-size: 20px;
@@ -605,7 +604,7 @@ body {
         margin-bottom: 49px;
     }
     @media (min-width: 768px) {
-        margin-top: 160px;
+        margin-top: 120px;
         margin-bottom: 61px;
     }
 
@@ -1252,4 +1251,77 @@ input[type="checkbox"]:checked + .custom-checkbox {
 .success_modal_text_wrapper {
     display: flex;
     flex-direction: column;
+}
+
+
+/*form modal*/
+
+.form_modal_overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #11111169;
+    backdrop-filter: blur(10.5px);
+    z-index: 7;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.form_modal_overlay.open {
+    display: flex;
+}
+.form_modal {
+    border: 1px solid #44444480;
+    background: #2C2C2C;
+    width: 256px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+    position: relative;
+    z-index: 8;
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    @media (min-width: 768px) {
+        width: 688px;
+        padding: 40px;
+        gap: 34px;
+        border-radius: 28px;
+        img {
+            width: 160px;
+            height: 160px;
+        }
+    }
+    @media (min-width: 1440px) {
+        width: 870px;
+        border-radius: 32px;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+.form_modal_close_button {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+    @media (min-width: 768px) {
+        right: 32px;
+        top: 40px;
+    }
+    @media (min-width: 1440px) {
+        right: 40px;
+        top: 40px;
+    }
 }
