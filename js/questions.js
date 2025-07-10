@@ -2,9 +2,8 @@ export async function questions() {
     try {
         const response = await fetch("./data/questions.json");
         const data = await response.json();
-        console.log(data);
-        const questionWrapper = document.querySelector(".faq_questions_wrapper")
 
+        const questionWrapper = document.querySelector(".faq_questions_wrapper")
         data.forEach((q) => {
             const question = renderQuestion(q);
             questionWrapper.appendChild(question);

@@ -5,7 +5,7 @@
     font-size: 16px;
     margin-top: 120px;
     @media (min-width: 768px) {
-        margin-top: 160px;
+        margin-top: 120px;
     }
     @media (min-width: 1440px) {
         font-size: 32px;
@@ -18,7 +18,7 @@
     width: 256px;
     height: 1146px;
     @media (min-width: 768px) {
-        margin-top: 160px;
+        margin-top: 120px;
         width: 690px;
         height: 732px;
     }
@@ -208,7 +208,7 @@
     position: relative;
     margin: 120px 0;
     @media (min-width: 768px) {
-        margin: 160px 0;
+        margin: 120px 0;
     }
 }
 .tech_stack_background {

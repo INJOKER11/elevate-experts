@@ -4,7 +4,6 @@ export function successModal() {
     const body = document.body;
     const modalCloseButton = document.querySelector(".success_modal_close_button");
 
-    modalOverlay.classList.toggle("open");
     modalOverlay.addEventListener('click', (ev) => {
         if (ev.target === modalOverlay) {
             modalOverlay.classList.remove("open");
