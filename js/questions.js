@@ -4,7 +4,11 @@ export async function questions() {
         const data = await response.json();
 
         const questionWrapper = document.querySelector(".faq_questions_wrapper")
+
         data.forEach((q) => {
+            if(!questionWrapper) {
+                return;
+            }
             const question = renderQuestion(q);
             questionWrapper.appendChild(question);
         })
