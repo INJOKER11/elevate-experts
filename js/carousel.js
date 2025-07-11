@@ -1,6 +1,14 @@
 let currentPage = 1;
-const itemsPerPage = 3;
+const itemsPerPage = getItemsPerPage();
 let employeesData = [];
+
+function getItemsPerPage() {
+    const width = window.innerWidth;
+
+    if (width < 768) return 1;
+    if (width < 1440) return 2;
+    return 3;
+}
 
 export async function carousel(){
     try {
