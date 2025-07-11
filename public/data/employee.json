@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Masturbek",
+    "last_name": "Zhulbayev",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  },
+  {
+    "id": 2,
+    "name": "Masturbek",
+    "last_name": "Zhulbayev",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  },
+  {
+    "id": 3,
+    "name": "Masturbek",
+    "last_name": "Zhulbayev",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  },
+  {
+    "id": 4,
+    "name": "Masturbek",
+    "last_name": "Zhulbayev",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  },
+  {
+    "id": 5,
+    "name": "Masturbek",
+    "last_name": "Zhulbayev",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  },
+  {
+    "id": 6,
+    "name": "Pavlo",
+    "last_name": "Miho",
+    "position": "Frontend",
+    "img": "./assets/about/persons/example.svg",
+    "telegram": "neneforf",
+    "linkedin": "pavlo-miho-1427792b6"
+  }
+]

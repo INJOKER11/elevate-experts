@@ -32,7 +32,7 @@
     margin: 120px 0;
 }
 
-.cards_wrapper {
+.carousel_cards_wrapper {
     display: flex;
     gap: 24px;
 }
@@ -65,6 +65,14 @@
         right: 12px;
         top: 12px;
     }
+}
+.social_card_button_wrapper {
+    display: none;
+    transition: all 0.3s ease;
+}
+.social_card_button_wrapper.active {
+    display: flex;
+    gap: 12px;
 }
 .plus_button {
     border: 1px solid #44444480;
@@ -175,9 +183,10 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.active {
+.pagination_dot.active {
     background: #B1FFBCCC;
 }
 

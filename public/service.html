@@ -26,7 +26,7 @@
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        <button class="book_call_button">Book a free call</button>
+        <button class="book_call_button" id="header_button">Book a free call</button>
     </div>
     <div class="mobile_header_menu">
         <a href="./index.html">Home</a>
@@ -427,6 +427,149 @@
         </div>
     </div>
 </footer>
+
+<div class="success_modal_overlay">
+    <div class="success_modal">
+        <button class="success_modal_close_button">
+            <img src="./assets/icons/close.svg" alt="close"/>
+        </button>
+        <img src="./assets/success.png" alt="success"/>
+        <div class="success_modal_text_wrapper">
+            <span class="success_modal_title">Message sent successfully</span>
+            <span class="success_modal_description">Our team will review your request and contact you within 1–2 business days.</span>
+        </div>
+        <a class="banner_button_primary" href="./index.html">
+            <span>Back to home page</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="form_modal_overlay">
+    <div class="form_modal">
+        <button class="form_modal_close_button">
+            <img src="./assets/icons/close.svg" alt="close"/>
+        </button>
+        <form class="form_modal_content" >
+            <span class="form_modal_header">
+                Personal info
+            </span>
+            <div class="form_input_wrapper">
+                <div class="form_input_outline">
+                    <div class="form_input_label">
+                        <label for="name">Name*</label>
+                    </div>
+                    <input placeholder="Your name" id="name"/>
+                </div>
+                <div class="form_input_outline">
+                    <div class="form_input_label">
+                        <label for="email">Email*</label>
+                    </div>
+                    <input placeholder="Your name" id="email"/>
+                </div>
+            </div>
+
+            <div class="form_long_text_outline">
+                <div class="form_label_for_long_text">
+                    <label for="long_text">Message*</label>
+                </div>
+                <textarea placeholder="Your message" id="long_text"></textarea>
+            </div>
+            <span class="form_modal_header">Choose your service</span>
+            <div class="form_modal_checkbox_service_wrapper">
+
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Backend Development
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Fullstack Development
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Machine Learning / AI
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Frontend Development
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Data Engineering
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Data Analytics
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Cybersecurity
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    DevOps / DevSecOps
+                </label>
+            </div>
+            <span class="form_modal_header">Preferred contact method</span>
+            <div class="form_modal_contact_method_checkbox_wrapper">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Email
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Phone
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="custom-checkbox">
+                            <img src="./assets/icons/mark.svg" alt="mark"/>
+                        </span>
+                    Doesn’t matter
+                </label>
+            </div>
+            <button class="banner_button_primary">
+                <span>Send message</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
 
 <script src="./js/main.js" type="module"></script>
 </body>
