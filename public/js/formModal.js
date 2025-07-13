@@ -7,6 +7,7 @@ export function formModal() {
     const openButton = document.querySelector("#header_button")
 
     openButton.addEventListener("click", () => {
+        window.scroll(0, 0);
         modalOverlay.classList.add("open");
         body.classList.add("no-scroll")
     })
