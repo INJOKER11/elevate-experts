@@ -303,7 +303,18 @@ body {
         font-weight: 300;
         font-size: 12px;
     }
-
+    &:focus {
+        background: #8CEB9A;
+        span {
+            color: #111111;
+        }
+        label {
+            color: #111111;
+        }
+        svg {
+            color: #111111;
+        }
+    }
     @media (min-width: 768px) {
         padding: 0 32px;
         span {
@@ -355,7 +366,14 @@ body {
     }
 }
 .layer_to_gradient {
-    background: linear-gradient(#8CEB9AB2, #4F855700);
+    background: linear-gradient(250deg, rgba(140, 235, 154, 0.7), rgba(79, 133, 87, 0));
+    background-size: 400% 400%;
+    background-position: 0% 50%;
+    transition: background-position 0.3s ease;
+
+    &:hover {
+        animation: gradientMove 3s ease infinite;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,6 +382,9 @@ body {
     border-radius: 10px;
     width: fit-content;
     height: 38px;
+    &:focus {
+        background: white;
+    }
     @media (min-width: 768px) {
         height: 51px;
         border-radius: 10px;
@@ -373,6 +394,17 @@ body {
         border-radius: 16px;
     }
 
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .layer_to_gradient_second {
     background: linear-gradient(#8CEB9AB2, #4F855700);

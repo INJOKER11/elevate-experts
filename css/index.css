@@ -294,6 +294,10 @@
     gap: 8px;
     width: auto;
     &:hover {
+        border-color: #444444;
+    }
+    &:focus {
+        border-color: #44444480;
         label {
             color: white;
         }
