@@ -5,9 +5,13 @@ import {formModal} from "./formModal.js";
 import {carousel} from "./carousel.js";
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOMContentLoaded: main.js loaded ✅");
+
     burgerMenu();
     questions();
     successModal();
     formModal();
-    carousel();
+    if (document.querySelector(".carousel_cards_wrapper")) {
+        carousel();
+    }
 })

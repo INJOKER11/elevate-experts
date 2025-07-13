@@ -201,11 +201,11 @@
 
             </div>
 <!--            pc-->
-            <img src="assets/index/bottom_banner.svg" class="bottom_banner" alt="bottom_banner"/>
+            <img src="assets/index/bottom_banner.png" class="bottom_banner" alt="bottom_banner"/>
 <!--            mobile-->
-            <img src="assets/icons/mobile_bottom_banner.svg" class="mobile_bottom_banner" alt="bottom_banner"/>
+            <img src="assets/index/mobile_bottom_banner.png" class="mobile_bottom_banner" alt="bottom_banner"/>
 <!--            tablet-->
-            <img src="assets/index/bottom_tablet_banner.svg" class="tablet_bottom_banner" alt="bottom_banner"/>
+            <img src="assets/index/bottom_tablet_banner.png" class="tablet_bottom_banner" alt="bottom_banner"/>
         </div>
 
         <footer class="footer">
@@ -318,7 +318,7 @@
         <button class="form_modal_close_button">
             <img src="./assets/icons/close.svg" alt="close"/>
         </button>
-        <form class="form_modal_content" >
+        <form class="form_modal_content" id="form_modal">
             <span class="form_modal_header">
                 Personal info
             </span>
@@ -347,56 +347,56 @@
             <div class="form_modal_checkbox_service_wrapper">
 
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="backend">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Backend Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="custom-checkbox">
+                    <input type="checkbox" name="services" value="fullstack">
+                    <span class="custom-checkbox" >
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Fullstack Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="machine_learning_ai">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Machine Learning / AI
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="frontend_development">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Frontend Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="data_engineering">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Data Engineering
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="data_analytics">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Data Analytics
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="cybersecurity">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Cybersecurity
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="devops_devsecops">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
@@ -406,28 +406,28 @@
             <span class="form_modal_header">Preferred contact method</span>
             <div class="form_modal_contact_method_checkbox_wrapper">
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="contact_by_email">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Email
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="contact_by_phone">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Phone
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="doesnt_matter">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Doesn’t matter
                 </label>
             </div>
-            <button class="banner_button_primary">
+            <button class="banner_button_primary" type="submit">
                 <span>Send message</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

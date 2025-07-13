@@ -1,10 +1,13 @@
 
 
 export function formModal() {
-    const modalOverlay = document.querySelector(".form_modal_overlay");
-    const body = document.body;
     const modalCloseButton = document.querySelector(".form_modal_close_button");
     const openButton = document.querySelector("#header_button")
+    const modalOverlay = document.querySelector(".form_modal_overlay");
+    const body = document.body;
+    const successModalOverlay = document.querySelector(".success_modal_overlay");
+    const modalForm = document.getElementById("form_modal");
+    if(!modalForm) return;
 
     openButton.addEventListener("click", () => {
         window.scroll(0, 0);
@@ -22,4 +25,43 @@ export function formModal() {
         modalOverlay.classList.remove("open");
         body.classList.remove("no-scroll")
     });
+
+    modalForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const checkedServices = Array.from(this.querySelectorAll('input[name="services"]:checked'))
+            .map(input => input.value);
+
+        const checkedContact = Array.from(this.querySelectorAll('input[name="contact"]:checked'))
+            .map(input => input.value);
+
+        const formData = {
+            name: this.name?.value ?? "",
+            email: this.email?.value ?? "",
+            message: this.long_text?.value ?? "",
+            services: checkedServices,
+            contact: checkedContact,
+        };
+        try {
+
+            const res = await fetch("/send-email", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData),
+            })
+
+            if(res.ok) {
+                this.reset();
+                modalOverlay.classList.remove("open");
+                successModalOverlay.classList.add("open");
+            }else {
+                alert("Error occurred, try again")
+            }
+        } catch (e) {
+            console.error(e);
+            alert("Error occurred, try again")
+        }
+    })
 }
+
+

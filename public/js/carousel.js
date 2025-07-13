@@ -1,5 +1,5 @@
 let currentPage = 1;
-const itemsPerPage = getItemsPerPage();
+let itemsPerPage = getItemsPerPage();
 let employeesData = [];
 
 function getItemsPerPage() {
@@ -11,6 +11,7 @@ function getItemsPerPage() {
 }
 
 export async function carousel(){
+    console.log('carousel init')
     try {
         const response = await fetch("./data/employee.json");
         employeesData = await response.json();
@@ -24,6 +25,7 @@ export async function carousel(){
 
 function renderPage(page) {
     const carouselWrapper = document.querySelector(".carousel_cards_wrapper");
+
     if (!carouselWrapper) return;
 
     carouselWrapper.innerHTML = "";
@@ -37,14 +39,13 @@ function renderPage(page) {
         carouselWrapper.appendChild(employee);
     });
 
-    // обновляем активную точку
+
     updateActiveDot(page);
 }
 
 export function renderEmployee(e) {
     const employee = document.createElement("div");
     employee.className = "card";
-    console.log(e);
     employee.innerHTML = `
             <div class="card_button_wrapper">
             <div class="social_card_button_wrapper">
@@ -76,6 +77,8 @@ export function renderEmployee(e) {
 
 export function renderPagination() {
     const paginationWrapper = document.querySelector(".pagination_wrapper");
+
+    if (!paginationWrapper) return;
 
     paginationWrapper.innerHTML = ``;
 
