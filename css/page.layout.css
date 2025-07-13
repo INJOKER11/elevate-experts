@@ -130,8 +130,23 @@ body {
         color: #FFFFFF;
         font-size: 20px;
         font-weight: 200;
+        text-decoration: none;
     }
-
+}
+.header_link_underline_wrapper {
+    display: flex;
+    flex-direction: column;
+    span {
+        width: 0;
+        background: #B1FFBC;
+        height: 1px;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover {
+        span {
+            width: 100%;
+        }
+    }
 }
 
 .book_call_button {
@@ -147,7 +162,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        :hover {
+        &:hover {
             color: white;
         }
     }
@@ -221,7 +236,7 @@ body {
     font-size: 12px;
     width: fit-content;
     text-wrap: nowrap;
-
+    cursor: pointer;
     @media (min-width: 768px) {
         text-wrap: nowrap;
         font-size: 16px;
@@ -243,8 +258,14 @@ body {
         width: 16px;
         height: 16px;
         margin-left: 8px;
+        color: white;
     }
-
+    &:hover {
+        svg {
+            color: black;
+        }
+        color: black;
+    }
     @media (min-width: 768px) {
         height: 52px;
         padding: 0 24px;
@@ -648,6 +669,14 @@ body {
     align-items: center;
     justify-content: center;
     gap: 6px;
+    &:hover {
+        span {
+            color: #8CEB9A;
+        }
+        svg {
+            color: #8CEB9A;
+        }
+    }
     span {
         font-weight: 300;
         color: #AAAAAA;
@@ -656,6 +685,7 @@ body {
     svg {
         width: 20px;
         height: 20px;
+        color: #AAAAAA;
     }
     @media (min-width: 768px) {
         gap: 20px;
