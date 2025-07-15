@@ -303,7 +303,10 @@ body {
         font-weight: 300;
         font-size: 12px;
     }
-    &:focus {
+    svg {
+        color: white;
+    }
+    &:active {
         background: #8CEB9A;
         span {
             color: #111111;
@@ -370,9 +373,13 @@ body {
     background-size: 400% 400%;
     background-position: 0% 50%;
     transition: background-position 0.3s ease;
-
+    &:active {
+        background: #8CEB9A;
+        background-size: 0 0;
+        background-position: 0 0;
+    }
     &:hover {
-        animation: gradientMove 3s ease infinite;
+        animation: gradientMove 2s ease infinite;
     }
     display: flex;
     align-items: center;
@@ -382,9 +389,6 @@ body {
     border-radius: 10px;
     width: fit-content;
     height: 38px;
-    &:focus {
-        background: white;
-    }
     @media (min-width: 768px) {
         height: 51px;
         border-radius: 10px;
@@ -407,7 +411,9 @@ body {
     }
 }
 .layer_to_gradient_second {
-    background: linear-gradient(#8CEB9AB2, #4F855700);
+    background: linear-gradient(250deg, rgba(140, 235, 154, 0.7), rgba(79, 133, 87, 0));
+    background-size: 400% 400%;
+    background-position: 0% 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -417,6 +423,9 @@ body {
     width: fit-content;
     height: 49px;
 
+    &:hover {
+        animation: gradientMove 2s ease infinite;
+    }
     @media (min-width: 768px) {
         height: 52px;
     }

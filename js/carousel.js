@@ -11,7 +11,7 @@ function getItemsPerPage() {
 }
 
 export async function carousel(){
-    console.log('carousel init')
+
     try {
         const response = await fetch("./data/employee.json");
         employeesData = await response.json();

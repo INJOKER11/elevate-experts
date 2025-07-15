@@ -1,33 +1,11 @@
 import {config} from "../config.js";
 
-export function formModal() {
-    const modalCloseButton = document.querySelector(".form_modal_close_button");
-    const openButton = document.querySelector("#header_button")
-    const modalOverlay = document.querySelector(".form_modal_overlay");
-    const body = document.body;
+export function contactForm() {
+    const form = document.querySelector(".contact_form_wrapper");
     const successModalOverlay = document.querySelector(".success_modal_overlay");
-    const modalForm = document.getElementById("form_modal");
 
-    if(!modalForm) return;
 
-    openButton.addEventListener("click", () => {
-        window.scroll(0, 0);
-        modalOverlay.classList.add("open");
-        body.classList.add("no-scroll")
-    })
-    modalOverlay.addEventListener('click', (ev) => {
-        if (ev.target === modalOverlay) {
-            modalOverlay.classList.remove("open");
-            body.classList.remove("no-scroll")
-        }
-    });
-
-    modalCloseButton.addEventListener('click', () => {
-        modalOverlay.classList.remove("open");
-        body.classList.remove("no-scroll")
-    });
-
-    modalForm.addEventListener("submit", async function (e) {
+    form.addEventListener("submit", async function (e) {
         e.preventDefault();
 
         const checkedServices = Array.from(this.querySelectorAll('input[name="services"]:checked'))
@@ -35,6 +13,8 @@ export function formModal() {
 
         const checkedContact = Array.from(this.querySelectorAll('input[name="contact"]:checked'))
             .map(input => input.value);
+        console.log(this.name, 'name');
+        console.log(this.email, 'email');
 
         const formData = {
             name: this.name?.value ?? "",
@@ -53,7 +33,7 @@ export function formModal() {
 
             if(res.ok) {
                 this.reset();
-                modalOverlay.classList.remove("open");
+                window.scroll(0, 0);
                 successModalOverlay.classList.add("open");
             }else {
                 alert("Error occurred, try again")
@@ -64,5 +44,3 @@ export function formModal() {
         }
     })
 }
-
-

@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/page.layout.css"/>
     <link rel="stylesheet" href="./css/services.css"/>
-    <title>Services</title>
+
+    <title>Our Services — ElevateExperts Remote Tech Solutions</title>
+    <meta name="description" content="Explore the range of remote tech services offered by ElevateExperts, including software development, consulting, and project management.">
+    <meta property="og:title" content="ElevatExperts Services — Remote Tech Solutions">
+    <meta property="og:description" content="From software development to consulting, see how ElevateExperts can support your tech needs remotely.">
+    <meta property="og:url" content="https://your-domain.com/services.html">
+    <meta name="twitter:title" content="ElevateExperts Services — Remote Tech Solutions">
+    <meta name="twitter:description" content="Explore our remote software development and consulting services designed to accelerate your projects.">
+    <link rel="canonical" href="https://your-domain.com/services.html" />
 </head>
 <body>
 <div class="mobile_header_menu_overlay"></div>
@@ -20,10 +28,22 @@
             <img src="assets/icons/close.svg" alt="menu"/>
         </button>
         <div class="header_link_wrapper">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <div class="header_link_underline_wrapper">
+                <a href="index.html">Home</a>
+                <span></span>
+            </div>
+            <div class="header_link_underline_wrapper">
+                <a href="services.html">Services</a>
+                <span></span>
+            </div>
+            <div class="header_link_underline_wrapper">
+                <a href="about.html">About</a>
+                <span></span>
+            </div>
+            <div class="header_link_underline_wrapper">
+                <a href="contact.html">Contact</a>
+                <span></span>
+            </div>
         </div>
         <button class="book_call_button" id="header_button">Book a free call</button>
     </div>
@@ -62,16 +82,16 @@
                 </span>
         </div>
         <div class="banner_button_wrapper">
-            <button class="banner_button_primary">
+            <a class="banner_button_primary" href="./contact.html">
                 <span>Let’s get started</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </button>
+            </a>
             <div class="layer_to_gradient">
-                <button class="secondary_button">
+                <a class="secondary_button" href="./services.html">
                     <label class="banner_button_label">See All Services</label>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -283,12 +303,12 @@
         </div>
         <div class="bottom_banner_content_button_wrapper">
             <div class="layer_to_gradient">
-                <button class="secondary_button">
+                <a class="secondary_button" href="./contact.html">
                     <span>Contact us</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
 
@@ -348,21 +368,14 @@
                 <div class="footer_right">
                     <div class="footer_navigation">
                         <span>Navigation</span>
-                        <a>Home</a>
-                        <a>Services</a>
-                        <a>About</a>
-                        <a>Contacts</a>
+                        <a href="./index.html">Home</a>
+                        <a href="./services.html">Services</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">Contacts</a>
                     </div>
                     <div class="footer_services">
                         <span>Services</span>
-                        <a>Backend</a>
-                        <a>Frontend</a>
-                        <a>Fullstack</a>
-                        <a>Data Engineering</a>
-                        <a>Machine Learning / AI</a>
-                        <a>Data Analytics</a>
-                        <a>Cybersecurity</a>
-                        <a>DevOps / DevOpsSec</a>
+                        <a href="./service.html">Backend</a>
                     </div>
                 </div>
 
@@ -410,7 +423,7 @@
         <button class="form_modal_close_button">
             <img src="./assets/icons/close.svg" alt="close"/>
         </button>
-        <form class="form_modal_content" >
+        <form class="form_modal_content" id="form_modal">
             <span class="form_modal_header">
                 Personal info
             </span>
@@ -419,13 +432,13 @@
                     <div class="form_input_label">
                         <label for="name">Name*</label>
                     </div>
-                    <input placeholder="Your name" id="name"/>
+                    <input placeholder="Your name" id="name" name="name"/>
                 </div>
                 <div class="form_input_outline">
                     <div class="form_input_label">
                         <label for="email">Email*</label>
                     </div>
-                    <input placeholder="Your name" id="email"/>
+                    <input placeholder="Your name" id="email" name="email"/>
                 </div>
             </div>
 
@@ -433,62 +446,62 @@
                 <div class="form_label_for_long_text">
                     <label for="long_text">Message*</label>
                 </div>
-                <textarea placeholder="Your message" id="long_text"></textarea>
+                <textarea placeholder="Your message" id="long_text" name="long_text"></textarea>
             </div>
             <span class="form_modal_header">Choose your service</span>
             <div class="form_modal_checkbox_service_wrapper">
 
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="backend">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Backend Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
-                    <span class="custom-checkbox">
+                    <input type="checkbox" name="services" value="fullstack">
+                    <span class="custom-checkbox" >
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Fullstack Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="machine_learning_ai">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Machine Learning / AI
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="frontend_development">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Frontend Development
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="data_engineering">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Data Engineering
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="data_analytics">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Data Analytics
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="cybersecurity">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Cybersecurity
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="services" value="devops_devsecops">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
@@ -498,28 +511,28 @@
             <span class="form_modal_header">Preferred contact method</span>
             <div class="form_modal_contact_method_checkbox_wrapper">
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="contact_by_email">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Email
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="contact_by_phone">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Phone
                 </label>
                 <label class="checkbox-container">
-                    <input type="checkbox">
+                    <input type="checkbox" name="contact" value="doesnt_matter">
                     <span class="custom-checkbox">
                             <img src="./assets/icons/mark.svg" alt="mark"/>
                         </span>
                     Doesn’t matter
                 </label>
             </div>
-            <button class="banner_button_primary">
+            <button class="banner_button_primary" type="submit">
                 <span>Send message</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -528,6 +541,8 @@
         </form>
     </div>
 </div>
+
+
 
 <script src="./js/main.js" type="module"></script>
 </body>

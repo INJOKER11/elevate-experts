@@ -296,7 +296,7 @@
     &:hover {
         border-color: #444444;
     }
-    &:focus {
+    &:active {
         border-color: #44444480;
         label {
             color: white;
