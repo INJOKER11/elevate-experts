@@ -491,7 +491,7 @@
         width: 360px;
         height: 179px;
         border-radius: 16px;
-        gap: 10px;
+        gap: 25px;
     }
     @media (min-width: 1440px) {
         padding: 17px 12px;

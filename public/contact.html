@@ -20,7 +20,9 @@
 <body>
 <div class="mobile_header_menu_overlay"></div>
 <header class="header" id="header">
-    <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
+    <a href="./index.html">
+        <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
+    </a>
     <div class="header_menu_wrapper">
         <button class="header_burger_menu_open_button">
             <img src="assets/icons/header_menu.svg" alt="menu"/>
@@ -41,7 +43,7 @@
                 <a href="about.html">About</a>
                 <span></span>
             </div>
-            <div class="header_link_underline_wrapper">
+            <div class="header_link_underline_wrapper active">
                 <a href="contact.html">Contact</a>
                 <span></span>
             </div>
@@ -66,21 +68,28 @@
         <form class="contact_form_wrapper">
             <span class="contact_form_title">Personal info</span>
             <div class="form_input_wrapper">
-                <div class="form_input_outline">
-                    <div class="form_input_label">
+                <div class="contact_form_input_outline">
+                    <div class="contact_form_input_label">
                         <label for="contact_form_name">Name*</label>
                     </div>
                     <input placeholder="Your name" id="contact_form_name" name="name"/>
                 </div>
-                <div class="form_input_outline">
-                    <div class="form_input_label">
-                        <label for="contact_form_email">Email*</label>
+                <div>
+                    <div>
+                        <div class="contact_form_input_outline">
+                            <div class="contact_form_input_label">
+                                <label for="contact_form_email">Email*</label>
+                            </div>
+                            <input placeholder="Your email" id="contact_form_email" name="email"/>
+                        </div>
+                        <span class="email-error">Email is required</span>
                     </div>
-                    <input placeholder="Your email" id="contact_form_email" name="email "/>
+
                 </div>
+
             </div>
-            <div class="form_long_text_outline">
-                <div class="form_label_for_long_text">
+            <div class="contact_form_long_text_outline">
+                <div class="contact_form_label_for_long_text">
                     <label for="long_text">Message*</label>
                 </div>
                 <textarea placeholder="Your message" id="long_text" name="long_text"></textarea>
@@ -175,8 +184,8 @@
             <div class="contact_banner_button_wrapper">
                 <button class="banner_button_primary">
                     <span>Send message</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
             </div>
@@ -251,8 +260,8 @@
                 <div class="middle_banner_button_wrapper">
                     <a class="banner_button_primary" href="#contact_banner">
                         <span>Book a call</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
                 </div>
@@ -276,8 +285,8 @@
         <div class="middle_banner_button_wrapper">
             <a class="banner_button_primary" href="#contact_banner">
                 <span>Book a call</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3646 5.63623H11.2939M18.3646 5.63623L18.3643 12.7073M18.3646 5.63623L5.63672 18.3642" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
         </div>
@@ -325,12 +334,12 @@
                         <form class="footer_form">
                             <span>Questions? Ideas? We’re all ears.</span>
                             <div class="input_outline">
-                                <input placeholder="Email" class="input"/>
+                                <input placeholder="Email"  name="email" class="input"/>
                             </div>
 
                             <div class="input_outline">
                                 <button class="input_button"><img src="assets/icons/arrow_right.svg" alt="arrow_right"/></button>
-                                <input placeholder="Message" class="input_with_button"/>
+                                <input placeholder="Message" name="message" class="input_with_button"/>
                             </div>
                         </form>
                         <div class="contacts_wrapper">
@@ -415,11 +424,14 @@
                     </div>
                     <input placeholder="Your name" id="contact_name" name="name"/>
                 </div>
-                <div class="form_input_outline">
-                    <div class="form_input_label">
-                        <label for="contact_email">Email*</label>
+                <div>
+                    <div class="form_input_outline">
+                        <div class="form_input_label">
+                            <label for="contact_email">Email*</label>
+                        </div>
+                        <input placeholder="Your name" id="contact_email" name="email"/>
                     </div>
-                    <input placeholder="Your name" id="contact_email" name="email"/>
+                    <span class="email-error">Email is required</span>
                 </div>
             </div>
 

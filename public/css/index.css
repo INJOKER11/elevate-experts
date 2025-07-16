@@ -392,6 +392,46 @@
         margin: 64px;
     }
 }
+.services_wrapper_fall {
+    
+    display: flex;
+    align-items: flex-end;
+    height: 80%;
+    @media (min-width: 768px) {
+        height: 80%;
+    }
+    @media (min-width: 1440px) {
+        height: 70%;
+    }
+}
+.right_column_item_services_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 20px;
+}
+.service {
+    font-weight: 300;
+    border: 1px solid #44444480;
+    background: #111111;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 32px;
+    display: flex;
+    height: 34px;
+    align-items: center;
+    font-size: 12px;
+    @media (min-width: 768px) {
+        height: 51px;
+        font-size: 16px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 20px;
+        padding: 16px 32px;
+        height: 56px;
+    }
+}
+
 
 {/* FAQ */}
 

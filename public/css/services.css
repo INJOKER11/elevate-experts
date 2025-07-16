@@ -163,9 +163,30 @@
     right: 0;
     bottom: 0;
 }
-
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .card_button_gradient_layer {
-    background: linear-gradient(#8CEB9AB2, #4F855700);
+    background: linear-gradient(250deg, rgba(140, 235, 154, 0.7), rgba(79, 133, 87, 0));
+    background-size: 400% 400%;
+    background-position: 0% 50%;
+    transition: background-position 0.3s ease;
+    &:active {
+        background: #8CEB9A;
+        background-size: 0 0;
+        background-position: 0 0;
+    }
+    &:hover {
+        animation: gradientMove 2s ease infinite;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
