@@ -18,6 +18,7 @@ body {
     display: flex;
     gap: 16px;
     margin: 32px 0;
+    justify-content: space-between;
     @media(min-width: 768px) {
         height: 72px;
         gap: 20px;
@@ -95,25 +96,26 @@ body {
 
 .header_menu_wrapper {
     background: #1A1A1A;
-    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     border-radius: 16px;
     border: 1px solid #44444480;
+    width: 60px;
+    justify-content: center;
 
     img {
         height: 32px;
         width: 32px;
-        margin-right: 20px;
     }
     @media (min-width: 768px) {
         border-radius: 20px;
+        width: 80px;
     }
     @media(min-width: 1440px) {
         border-radius: 24px;
         justify-content: space-between;
+        width: 100%;
         img {
             display: none;
         }
@@ -181,6 +183,7 @@ body {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    overflow: visible;
     @media(min-width: 768px) {
         position: relative;
         display: flex;
@@ -196,23 +199,55 @@ body {
     }
 
 }
-.mobile_banner {
+
+.video-wrapper {
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     display: block;
-    position: relative;
-    @media (min-width: 768px) {
-        display: none;
-    }
 }
-.tablet_banner {
+
+/* По умолчанию — скрыть всё */
+.video-wrapper.desktop,
+.video-wrapper.tablet,
+.video-wrapper.mobile {
     display: none;
-    @media (min-width: 768px) {
+}
+
+/* Desktop: ≥1440px */
+@media (min-width: 1440px) {
+    .video-wrapper.desktop {
         display: block;
-        position: relative;
-    }
-    @media (min-width: 1440px) {
-        display: none;
+        width: 1340px;
+        height: 640px;
+        clip-path: url(#video-clip);
     }
 }
+
+/* Tablet: 768px–1439px */
+@media (min-width: 768px) and (max-width: 1439px) {
+    .video-wrapper.tablet {
+        display: block;
+        width: 688px;
+        height: 440px;
+        clip-path: url(#video-clip-tablet);
+    }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+    .video-wrapper.mobile {
+        display: block;
+        width: 256px;
+        height: 420px;
+        clip-path: url(#video-clip-mobile);
+    }
+}
+
 .banner_content {
     position: absolute;
     width: 100%;

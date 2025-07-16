@@ -77,12 +77,44 @@
             <div class="dot"></div>
             <label class="page_title">Home</label>
         </div>
-<!--        pc-->
-        <img src="assets/index/home_banner.svg" alt="banner" class="banner" />
-<!--        mobile-->
-        <img src="assets/index/mobile_home_banner.svg" alt="banner" class="mobile_banner"/>
-<!--        tablet-->
-        <img src="assets/index/tablet_banner.svg" alt="banner" class="tablet_banner"/>
+        <svg width="0" height="0" style="position:absolute">
+            <defs>
+                <!-- Desktop -->
+                <clipPath id="video-clip" clipPathUnits="userSpaceOnUse">
+                    <path
+                            d="M0 32C0 14.3269 14.3269 7.15256e-06 32 7.15256e-06H540C556.292 7.15256e-06 569.5 13.2076 569.5 29.5C569.5 45.7924 582.708 59 599 59H744.5C760.792 59 774 45.7924 774 29.5C774 13.2076 787.208 1.66905e-07 803.5 3.72792e-07L1308 6.74817e-06C1325.67 6.97151e-06 1340 14.3269 1340 32V608C1340 625.673 1325.67 640 1308 640H32C14.3269 640 0 625.673 0 608V32Z"
+                    />
+                </clipPath>
+
+                <!-- Tablet -->
+                <clipPath id="video-clip-tablet" clipPathUnits="userSpaceOnUse">
+                    <path
+                            d="M456 0C442.745 0 432 10.7452 432 24V27.3333C432 40.5882 421.255 51.3333 408 51.3333L281.5 51.3333C268.245 51.3333 257.5 40.5882 257.5 27.3333V24C257.5 10.7451 246.755 0 233.5 0H24C10.7452 0 0 10.7452 0 24V416C0 429.255 10.7452 440 24 440H664C677.255 440 688 429.255 688 416V24C688 10.7452 677.255 0 664 0H456Z"
+                    />
+                </clipPath>
+
+                <!-- Mobile -->
+                <clipPath id="video-clip-mobile" clipPathUnits="userSpaceOnUse">
+                    <path d="M155 49.4118C146.163 49.4118 139 42.2483 139 33.4118V16C139 7.16345 131.837 0 123 0H16C7.16344 0 0 7.16344 0 16V404C0 412.837 7.16344 420 16 420H240C248.837 420 256 412.837 256 404V65.4118C256 56.5752 248.837 49.4118 240 49.4118H155Z" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <!-- Desktop Video -->
+        <div class="video-wrapper desktop">
+            <video src="./assets/video/banner.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <!-- Tablet Video -->
+        <div class="video-wrapper tablet">
+            <video src="./assets/video/banner.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <!-- Mobile Video -->
+        <div class="video-wrapper mobile">
+            <video src="./assets/video/banner.mp4" autoplay muted loop playsinline></video>
+        </div>
+
         <div class="banner_content">
             <div class="banner_text_wrapper">
                 <span class="banner_title">Your remote tech team
@@ -367,7 +399,7 @@
             <div class="form_input_wrapper">
                 <div class="form_input_outline">
                     <div class="form_input_label">
-                        <label for="contact_name">Name*</label>
+                        <label for="contact_name">Name</label>
                     </div>
                     <input placeholder="Your name" id="contact_name" name="name"/>
                 </div>
@@ -384,7 +416,7 @@
 
             <div class="form_long_text_outline">
                 <div class="form_label_for_long_text">
-                    <label for="contact_long_text">Message*</label>
+                    <label for="contact_long_text">Message</label>
                 </div>
                 <textarea placeholder="Your message" id="contact_long_text" name="long_text"></textarea>
             </div>

@@ -1,18 +1,18 @@
 <svg width="688" height="440" viewBox="0 0 688 440" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M456 0C442.745 0 432 10.7452 432 24V27.3333C432 40.5882 421.255 51.3333 408 51.3333L281.5 51.3333C268.245 51.3333 257.5 40.5882 257.5 27.3333V24C257.5 10.7451 246.755 0 233.5 0H24C10.7452 0 0 10.7452 0 24V416C0 429.255 10.7452 440 24 440H664C677.255 440 688 429.255 688 416V24C688 10.7452 677.255 0 664 0H456Z" fill="#2C2C2C" fill-opacity="0.54"/>
-<path d="M664 1H456C443.297 1 433 11.2975 433 24V27.333C433 41.1401 421.807 52.333 408 52.333H281.5C267.693 52.333 256.5 41.1401 256.5 27.333V24C256.5 11.2975 246.203 1 233.5 1H24C11.2975 1 1 11.2975 1 24V416C1 428.703 11.2975 439 24 439H664C676.703 439 687 428.703 687 416V24C687 11.2975 676.703 1 664 1Z" stroke="#444444" stroke-opacity="0.5" stroke-width="2"/>
+<path d="M456 0C442.745 0 432 10.7452 432 24V27.3333C432 40.5882 421.255 51.3333 408 51.3333L281.5 51.3333C268.245 51.3333 257.5 40.5882 257.5 27.3333V24C257.5 10.7451 246.755 0 233.5 0H24C10.7452 0 0 10.7452 0 24V416C0 429.255 10.7452 440 24 440H664C677.255 440 688 429.255 688 416V24C688 10.7452 677.255 0 664 0H456Z" fill="#2C2C2C" fill-opacity="0.54" style="fill:#2C2C2C;fill:color(display-p3 0.1725 0.1725 0.1725);fill-opacity:0.54;"/>
+<path d="M664 1H456C443.297 1 433 11.2975 433 24V27.333C433 41.1401 421.807 52.333 408 52.333H281.5C267.693 52.333 256.5 41.1401 256.5 27.333V24C256.5 11.2975 246.203 1 233.5 1H24C11.2975 1 1 11.2975 1 24V416C1 428.703 11.2975 439 24 439H664C676.703 439 687 428.703 687 416V24C687 11.2975 676.703 1 664 1Z" stroke="#444444" stroke-opacity="0.5" style="stroke:#444444;stroke:color(display-p3 0.2667 0.2667 0.2667);stroke-opacity:0.5;" stroke-width="2"/>
 <g filter="url(#filter0_f_2001_8756)">
-<ellipse cx="343.932" cy="475.073" rx="143.175" ry="111.499" transform="rotate(28.3181 343.932 475.073)" fill="#06CE22" fill-opacity="0.4"/>
+<ellipse cx="343.932" cy="475.073" rx="143.175" ry="111.499" transform="rotate(28.3181 343.932 475.073)" fill="#06CE22" fill-opacity="0.4" style="fill:#06CE22;fill:color(display-p3 0.0220 0.8061 0.1325);fill-opacity:0.4;"/>
 </g>
 <g opacity="0.8">
-<path d="M510.66 -23.4992C580.186 377.546 865.085 -78.1358 940.273 398.415" stroke="#E5EAE2" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round" stroke-dasharray="10 10"/>
+<path d="M510.66 -23.4992C580.186 377.546 865.085 -78.1358 940.273 398.415" stroke="#E5EAE2" stroke-opacity="0.4" style="stroke:#E5EAE2;stroke:color(display-p3 0.8980 0.9176 0.8863);stroke-opacity:0.4;" stroke-width="2" stroke-linejoin="round" stroke-dasharray="10 10"/>
 <g opacity="0.5">
-<rect x="-0.699203" y="0.105428" width="39" height="39" rx="19.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 555.673 46.61)" fill="#B1FFBC" fill-opacity="0.32"/>
-<rect x="-0.699203" y="0.105428" width="39" height="39" rx="19.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 555.673 46.61)" stroke="#8CEB9A"/>
-<circle cx="10" cy="10" r="9.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 542.888 49.1131)" fill="#B1FFBC" stroke="#8CEB9A"/>
+<rect x="-0.699203" y="0.105428" width="39" height="39" rx="19.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 555.673 46.61)" fill="#B1FFBC" fill-opacity="0.32" style="fill:#B1FFBC;fill:color(display-p3 0.6941 1.0000 0.7373);fill-opacity:0.32;"/>
+<rect x="-0.699203" y="0.105428" width="39" height="39" rx="19.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 555.673 46.61)" stroke="#8CEB9A" style="stroke:#8CEB9A;stroke:color(display-p3 0.5490 0.9216 0.6039);stroke-opacity:1;"/>
+<circle cx="10" cy="10" r="9.5" transform="matrix(-0.804631 -0.593775 -0.593775 0.804631 542.888 49.1131)" fill="#B1FFBC" stroke="#8CEB9A" style="fill:#B1FFBC;fill:color(display-p3 0.6941 1.0000 0.7373);fill-opacity:1;stroke:#8CEB9A;stroke:color(display-p3 0.5490 0.9216 0.6039);stroke-opacity:1;"/>
 </g>
 </g>
-<rect x="235" y="164" width="457" height="247" fill="url(#pattern0_2001_8756)"/>
+<rect x="235" y="164" width="457" height="247" fill="url(#pattern0_2001_8756)" style=""/>
 <defs>
 <filter id="filter0_f_2001_8756" x="-192.792" y="-44.2999" width="1073.45" height="1038.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
