@@ -38,9 +38,7 @@ function renderQuestion(q) {
 }
 
 function toggleQuestion(q) {
-    const button = q.querySelector(".faq_expand_button");
-
-    button.addEventListener("click", () => {
+    q.addEventListener("click", () => {
         q.classList.toggle("faq_open");
-    })
+    });
 }
