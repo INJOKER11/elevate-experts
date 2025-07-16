@@ -148,6 +148,13 @@ body {
         }
     }
 }
+.header_link_underline_wrapper.active {
+    span {
+        width: 100%;
+        background: #B1FFBC;
+        height: 1px;
+    }
+}
 
 .book_call_button {
     display: none;
@@ -162,6 +169,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: color 0.3s;
         &:hover {
             color: white;
         }
@@ -254,11 +262,13 @@ body {
     font-size: 12px;
     width: 100%;
     cursor: pointer;
+    transition: color 0.3s;
     svg {
         width: 16px;
         height: 16px;
         margin-left: 8px;
         color: white;
+        transition: color 0.3s;
     }
     &:hover {
         svg {
@@ -876,6 +886,9 @@ body {
         width: 375px;
     }
 }
+.input_outline.error {
+    border-color: #FF4D4F;
+}
 .input {
     height: 40px;
     font-weight: 100;
@@ -1468,6 +1481,12 @@ input[type="checkbox"]:checked + .custom-checkbox {
         }
     }
 }
+.form_input_outline.error {
+    border-color: #FF4D4F;
+    label {
+        color: #FF4D4F;
+    }
+}
 .form_input_label {
     position: absolute;
     background: #2C2C2C;
@@ -1595,4 +1614,14 @@ input[type="checkbox"]:checked + .custom-checkbox {
         gap: 24px;
         margin: 40px 0 80px 0;
     }
+}
+
+
+.email-error {
+    position: absolute;
+    display: none;
+    color: #FF4D4F;
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 10px;
 }

@@ -54,7 +54,6 @@
 .contact_banner_title_wrapper {
     display: none;
     @media (min-width: 768px) {
-        margin-top: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -71,8 +70,7 @@
         }
     }
     @media (min-width: 1440px) {
-        margin-top: 12px;
-        gap: 12px;
+        gap: 12p;
     }
 }
 .contact_form_title {
@@ -84,7 +82,7 @@
     }
 }
 
-.form_input_outline {
+.contact_form_input_outline {
     width: 216px;
     height: 44px;
     border: 1px solid #B1FFBC;
@@ -124,7 +122,13 @@
         }
     }
 }
-.form_input_label {
+.contact_form_input_outline.error {
+    border-color: #FF4D4F;
+    label {
+        color: #FF4D4F;
+    }
+}
+.contact_form_input_label {
     position: absolute;
     background: #1f1f1f;
     width: 55px;
@@ -166,7 +170,7 @@
     }
 }
 
-.form_long_text_outline {
+.contact_form_long_text_outline {
     width: 216px;
     height: 89px;
     border-radius: 20px;
@@ -210,7 +214,7 @@
         }
     }
 }
-.form_label_for_long_text {
+.contact_form_label_for_long_text {
     position: absolute;
     background: #1f1f1f;
     text-align: center;

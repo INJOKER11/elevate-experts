@@ -34,7 +34,9 @@
 <body>
 <div class="mobile_header_menu_overlay"></div>
     <header class="header" id="header">
-        <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
+        <a href="./index.html">
+            <img class="logo" src="assets/icons/logo.svg" alt="logo"/>
+        </a>
         <div class="header_menu_wrapper">
             <button class="header_burger_menu_open_button">
                 <img src="assets/icons/header_menu.svg" alt="menu"/>
@@ -42,8 +44,8 @@
             <button class="header_burger_menu_close_button">
                 <img src="assets/icons/close.svg" alt="menu"/>
             </button>
-            <div class="header_link_wrapper">
-                <div class="header_link_underline_wrapper">
+            <div class="header_link_wrapper ">
+                <div class="header_link_underline_wrapper active">
                     <a href="index.html">Home</a>
                     <span></span>
                 </div>
@@ -147,9 +149,22 @@
                     </div>
                     <div class="mobile_services">
                         <div class="right_column_item">
-                        <span class="right_column_item_title">
-                            Services
-                        </span>
+                            <div>
+                            <span class="right_column_item_title">
+                                Services
+                            </span>
+                            </div>
+                            <div class="services_wrapper_fall">
+                                <div class="right_column_item_services_wrapper">
+                                    <div class="service frontend">Frontend</div>
+                                    <div class="service ai">AI</div>
+                                    <div class="service other">Other</div>
+                                    <div class="service engineering">Engineering</div>
+                                    <div class="service cybersecurity">Cybersecurity</div>
+                                    <div class="service backed">Backend</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="second_row">
@@ -181,9 +196,21 @@
                 </div>
                 <div class="right_column">
                     <div class="right_column_item">
-                        <span class="right_column_item_title">
-                            Services
-                        </span>
+                        <div>
+                            <span class="right_column_item_title">
+                                Services
+                            </span>
+                        </div>
+                        <div class="services_wrapper_fall">
+                            <div class="right_column_item_services_wrapper">
+                                <div class="service frontend">Frontend</div>
+                                <div class="service ai">AI</div>
+                                <div class="service other">Other</div>
+                                <div class="service engineering">Engineering</div>
+                                <div class="service cybersecurity">Cybersecurity</div>
+                                <div class="service backed">Backend</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </div>
@@ -231,7 +258,7 @@
             <img src="assets/index/bottom_tablet_banner.png" class="tablet_bottom_banner" alt="bottom_banner"/>
         </div>
 
-        <footer class="footer">
+<footer class="footer">
     <div class="custom_footer_background">
         <div class="footer_button_up_wrapper">
             <a class="footer_button_up" href="#header">
@@ -254,12 +281,12 @@
                         <form class="footer_form">
                             <span>Questions? Ideas? We’re all ears.</span>
                             <div class="input_outline">
-                                <input placeholder="Email" class="input"/>
+                                <input placeholder="Email"  name="email" class="input"/>
                             </div>
 
                             <div class="input_outline">
                                 <button class="input_button"><img src="assets/icons/arrow_right.svg" alt="arrow_right"/></button>
-                                <input placeholder="Message" class="input_with_button"/>
+                                <input placeholder="Message" name="message" class="input_with_button"/>
                             </div>
                         </form>
                         <div class="contacts_wrapper">
@@ -309,12 +336,11 @@
     </div>
 </footer>
 
-
 <div class="success_modal_overlay">
     <div class="success_modal">
-            <button class="success_modal_close_button">
-                <img src="./assets/icons/close.svg" alt="close"/>
-            </button>
+        <button class="success_modal_close_button">
+            <img src="./assets/icons/close.svg" alt="close"/>
+        </button>
         <img src="./assets/success.png" alt="success"/>
         <div class="success_modal_text_wrapper">
             <span class="success_modal_title">Message sent successfully</span>
@@ -341,23 +367,26 @@
             <div class="form_input_wrapper">
                 <div class="form_input_outline">
                     <div class="form_input_label">
-                        <label for="index_name">Name*</label>
+                        <label for="contact_name">Name*</label>
                     </div>
-                    <input placeholder="Your name" id="index_name" name="name"/>
+                    <input placeholder="Your name" id="contact_name" name="name"/>
                 </div>
-                <div class="form_input_outline">
-                    <div class="form_input_label">
-                        <label for="index_email">Email*</label>
+                <div>
+                    <div class="form_input_outline">
+                        <div class="form_input_label">
+                            <label for="contact_email">Email*</label>
+                        </div>
+                        <input placeholder="Your name" id="contact_email" name="email"/>
                     </div>
-                    <input placeholder="Your name" id="index_email" name="email" type="email"/>
+                    <span class="email-error">Email is required</span>
                 </div>
             </div>
 
             <div class="form_long_text_outline">
                 <div class="form_label_for_long_text">
-                    <label for="long_text">Message*</label>
+                    <label for="contact_long_text">Message*</label>
                 </div>
-                <textarea placeholder="Your message" id="long_text"></textarea>
+                <textarea placeholder="Your message" id="contact_long_text" name="long_text"></textarea>
             </div>
             <span class="form_modal_header">Choose your service</span>
             <div class="form_modal_checkbox_service_wrapper">
@@ -454,5 +483,8 @@
 </div>
 
     <script src="./js/main.js" type="module"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/services-fall.js"></script>
 </body>
 </html>
