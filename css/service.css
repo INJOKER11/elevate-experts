@@ -57,21 +57,12 @@
 .solution_title_wrapper {
     position: absolute;
     left: 0;
-    top: 4px;
-    @media (min-width: 1440px) {
-        top: 12px;
-    }
+    top: 0;
 }
 .tech_stack_title_wrapper {
     position: absolute;
     right: 0;
-    top: 4px;
-    @media (min-width: 768px) {
-        top: 0;
-    }
-    @media (min-width: 1440px) {
-        top: 12px;
-    }
+    top: 0;
 }
 .section_title {
     height: 30px;
@@ -353,10 +344,7 @@
 }
 .strength_title_wrapper {
     position: absolute;
-    top: 4px;
-    @media (min-width: 768px) {
-        top: 0;
-    }
+    top: 0;
 }
 .strength_background {
     display: none;
@@ -365,7 +353,7 @@
     }
 }
 .strength_background_mobile {
-    display: flex;  
+    display: flex;
     @media (min-width: 768px) {
         display: none;
     }
@@ -609,7 +597,7 @@
     width: 22px;
     height: 22px;
     margin-top: 15px;
-    
+
     @media (min-width: 768px) {
         width: 60px;
         height: 60px;
