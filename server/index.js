@@ -12,6 +12,10 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../public")));
 console.log(process.env.MAIL_PASS)
 
+app.get("/test", async (req, res) => {
+    return 'yousdfs';
+})
+
 app.post("/send-email", async (req, res) => {
     const { name, email, message, services, contact } = req.body;
     const serviceList = (services || []).map(s => `<li>${s}</li>`).join("");

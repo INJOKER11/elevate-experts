@@ -297,6 +297,7 @@ body {
         gap: 0;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 }
 .banner_button_label {
@@ -373,6 +374,10 @@ body {
         color: #FFFFFF;
         font-weight: 300;
         font-size: 12px;
+        cursor: pointer;
+    }
+    label {
+        cursor: pointer;
     }
     svg {
         color: white;
@@ -422,6 +427,14 @@ body {
         height: 16px;
         width: 16px;
     }
+    label {
+        cursor: pointer;
+    }
+    &:active {
+        background: #8CEB9A;
+        background-size: 0 0;
+        background-position: 0 0;
+    }
 
     @media (min-width: 768px) {
         padding: 0 32px;
@@ -465,7 +478,7 @@ body {
         border-radius: 10px;
     }
     @media (min-width: 1440px) {
-        height: 59px;
+        height: 60px;
         border-radius: 16px;
     }
 
@@ -568,10 +581,8 @@ body {
     background: #111111;
     border: 1px solid #44444480;
     padding: 0 20px;
-    margin-top: 4px;
     @media (min-width: 768px) {
         height: 35px;
-        margin-top: 0;
     }
     @media (min-width: 1440px) {
         margin-top: 0;
@@ -649,7 +660,6 @@ body {
     padding: 0 20px;
     width: fit-content;
     gap: 8px;
-    margin-top: 4px;
     span {
         font-weight: 200;
         color: #AAAAAA;
@@ -659,7 +669,6 @@ body {
         height: 43px;
         padding: 0 32px;
         gap: 8px;
-        margin-top: 0;
         span {
             font-size: 16px;
         }

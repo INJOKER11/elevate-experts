@@ -108,3 +108,35 @@ function updateActiveDot(page) {
         }
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const prevBtn = document.querySelector(".carousel_left_button");
+    const nextBtn = document.querySelector(".carousel_right_button");
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            const totalPages = Math.ceil(employeesData.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+            }
+        });
+    }
+    window.addEventListener("resize", () => {
+        const newItemsPerPage = getItemsPerPage();
+        if (newItemsPerPage !== itemsPerPage) {
+            itemsPerPage = newItemsPerPage;
+            currentPage = 1;
+            renderPage(currentPage);
+            renderPagination();
+        }
+    });
+});
