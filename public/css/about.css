@@ -45,6 +45,17 @@
     left: -25px;
     z-index: 1;
     color: #8CEB9A;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    @media (min-width: 1440px) {
+        left: -35px;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
 }
 .carousel_right_button {
     position: absolute;
@@ -52,6 +63,17 @@
     right: -25px;
     z-index: 1;
     color: #8CEB9A;
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    @media (min-width: 1440px) {
+        right: -35px;
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
 }
 .card {
     width: 256px;
