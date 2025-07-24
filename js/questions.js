@@ -37,8 +37,52 @@ function renderQuestion(q) {
     return question;
 }
 
-function toggleQuestion(q) {
-    q.addEventListener("click", () => {
-        q.classList.toggle("faq_open");
+function toggleQuestion(questionElement) {
+    const buttonWrapper = questionElement.querySelector(".faq_question_button_question_wrapper");
+    const answer = questionElement.querySelector(".faq_question_answer");
+
+    if (!buttonWrapper || !answer) return;
+
+    buttonWrapper.addEventListener("click", () => {
+        const isOpen = questionElement.classList.contains("faq_open");
+
+
+        document.querySelectorAll(".faq_question.faq_open").forEach(openEl => {
+            if (openEl !== questionElement) {
+                openEl.classList.remove("faq_open");
+                const openAnswer = openEl.querySelector(".faq_question_answer");
+                openAnswer.style.maxHeight = "0";
+                openAnswer.style.padding = "0";
+            }
+        });
+
+        if (isOpen) {
+
+            const fullHeight = answer.scrollHeight;
+            answer.style.maxHeight = fullHeight + "px";
+            requestAnimationFrame(() => {
+                answer.style.maxHeight = "0";
+                answer.style.padding = "0";
+                questionElement.classList.remove("faq_open");
+            });
+        } else {
+            const fullHeight = answer.scrollHeight;
+            answer.style.maxHeight = "0";
+            answer.style.padding = "0";
+            questionElement.classList.add("faq_open");
+
+            requestAnimationFrame(() => {
+                answer.style.maxHeight = fullHeight + "px";
+                answer.style.padding = "20px 0 30px 0";
+            });
+        }
+    });
+
+    answer.addEventListener("transitionend", (e) => {
+        if (e.propertyName === "max-height") {
+            if (!questionElement.classList.contains("faq_open")) {
+                answer.style.maxHeight = "0";
+            }
+        }
     });
 }
