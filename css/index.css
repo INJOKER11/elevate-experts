@@ -141,7 +141,7 @@
     }
     @media(min-width: 1440px) {
         width: 885px;
-        height: 400px;
+        height: 300px;
         border-radius: 24px;
         padding: 64px 40px;
     }
@@ -366,7 +366,7 @@
     @media (min-width: 1440px) {
         border-radius: 24px;
         width: 431px;
-        height: 824px;
+        height: 100%;
     }
 
 }
@@ -429,8 +429,8 @@
     }
     @media (min-width: 1440px) {
         font-size: 20px;
-        padding: 16px 32px;
-        height: 56px;
+        padding: 18px 34px;
+        height: 68px;
     }
 }
 
@@ -442,9 +442,9 @@
         top: 200px;
     }
     @media (min-width: 1440px) {
-        top: 150px;
+        top: 200px;
         left: 20px;
-        transform: rotate(-80deg);
+        transform: rotate(-60deg);
     }
 }
 
@@ -456,8 +456,8 @@
         top: 280px;
     }
     @media (min-width: 1440px) {
-        top: 300px;
-        left: 110px;
+        top: 370px;
+        left: 120px;
         transform: rotate(50deg);
     }
 }
@@ -471,9 +471,9 @@
         left: 0;
     }
     @media (min-width: 1440px) {
-        top: 360px;
-        left: 220px;
-        transform: rotate(-80deg);
+        top: 100px;
+        left: 120px;
+        transform: rotate(20deg);
     }
 }
 
@@ -486,7 +486,7 @@
         transform: rotate(20deg);
     }
     @media (min-width: 1440px) {
-        top: 520px;
+        top: 400px;
         left: -10px;
         transform: rotate(-80deg);
     }
@@ -500,8 +500,8 @@
         top: 500px
     }
     @media (min-width: 1440px) {
-        top: 520px;
-        left: 100px;
+        top: 260px;
+        left: 115px;
         transform: rotate(-10deg);
     }
 }
@@ -516,7 +516,7 @@
         top: 140px;
     }
     @media (min-width: 1440px) {
-        top: 570px;
+        top: 460px;
         left: 140px;
         transform: rotate(0deg);
     }
@@ -531,9 +531,9 @@
         top: 440px;
     }
     @media (min-width: 1440px) {
-        top: 528px;
+        top: 380px;
         left: 180px;
-        transform: rotate(40deg);
+        transform: rotate(50deg);
     }
 }
 
@@ -562,7 +562,7 @@
         transform: rotate(-20deg);
     }
     @media (min-width: 1440px) {
-        top: 10px;
+        top: 0;
         left: 20px;
         transform: rotate(10deg);
     }
